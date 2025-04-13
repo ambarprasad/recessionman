@@ -829,8 +829,8 @@ if (gameOver || victory) {
         y: -BOSS_HEIGHT,
         width: BOSS_WIDTH,
         height: BOSS_HEIGHT,
-        hp: 150,
-        maxHp: 150,
+        hp: 200,
+        maxHp: 200,
         speed: 30, // Slower than regular dollars
         horizontalSpeed: Math.random() * 40 - 20 // Random horizontal movement
     };
@@ -842,7 +842,7 @@ if (gameOver || victory) {
 }
         
         function spawnDollar() {
-            const dollarHp = Math.ceil(2 * Math.pow(1.075, level));
+            const dollarHp = Math.ceil(2 * Math.pow(1.10, level));
             
             dollars.push({
                 x: Math.random() * (GAME_WIDTH - DOLLAR_WIDTH),
